@@ -303,7 +303,16 @@ border-radius: 2rem;
     text-align: center;
 }
 
+.social-media-wrapper i, .social-media-wrapper a{
+color: #fff;
+font-size: 1.7rem;
+}
 
+.social-media-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
 @media screen and (min-width: 768px) {
   .skills-container {
