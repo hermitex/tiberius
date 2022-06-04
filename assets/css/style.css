@@ -210,6 +210,20 @@ i{
     width: 10rem;
 }
 
+/* My Projects Section */
+.recent-projects{
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.project-bg-img{
+    background-image: url('../')
+}
 
 
 @media screen and (min-width: 768px) {
@@ -225,4 +239,8 @@ i{
   p.container-description{
       font-size: 1.8rem;
   }
+
+  .projects{
+    grid-template-columns: repeat(3, 1fr);
+}
 }
