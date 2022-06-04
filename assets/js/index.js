@@ -12,7 +12,7 @@ let url = project.imageUrl;
     <p class="project-summary">
      ${project.description}
     </p>
-    <a href="${project.url}">Visit Website</a>
+    <a href="${project.url}" class="border-secondary">Visit Website</a>
   </div>
   </div>
   `; 
