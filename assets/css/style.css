@@ -261,7 +261,7 @@ border-radius: 2rem;
   color: #fff;
   opacity: 0.8;
   border-radius: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   /* visibility: hidden; */
 }
 
@@ -287,8 +287,8 @@ border-radius: 2rem;
     border-radius: 2rem;
     padding: 1rem 2rem;
     height: 15rem;
-    z-index:1;
-    margin-top: -60rem;
+    margin-top: -5rem;
+ 
 }
 
 .main-footer{    
@@ -301,6 +301,7 @@ border-radius: 2rem;
     padding: 15rem 2rem;
     font-size: 2rem;
     text-align: center;
+    width: 100%;
 }
 
 .social-media-wrapper i, .social-media-wrapper a{
@@ -335,5 +336,11 @@ font-size: 1.7rem;
     
     flex-direction: row;
   
+}
+
+.footer-intro{
+ 
+    margin-top: -50rem;
+ 
 }
 }
