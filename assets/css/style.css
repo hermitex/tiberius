@@ -193,37 +193,116 @@ img {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.skills-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* icons */
-i{
-    font-size: 5rem;
-    color: #7510f7;
+i {
+  font-size: 5rem;
+  color: #7510f7;
 }
-.icon{
-    width: 10rem;
+.icon {
+  width: 10rem;
 }
 
 /* My Projects Section */
-.recent-projects{
+.recent-projects {
+  flex-direction: column;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.projects > div {
+  height: 50vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+border-radius: 2rem;
+}
+
+.project-bg-img#project_0 {
+  background-image: url("../images/paulines.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-bg-img#project_1 {
+  background-image: url("../images/movers.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-bg-img#project_2 {
+  background-image: url("../images/moringa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-overlay {
+  background-color: #141c3a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+  color: #fff;
+  opacity: 0.8;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  /* visibility: hidden; */
+}
+
+.project-bg-img:hover ~ .project-overlay {
+  visibility: visible;
+}
+
+/* Footer Section */
+.footer-container{
+    color: #fff;
+    margin-top: 10rem;
+}
+.footer-intro{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
+    background-color: #141c3a;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    height: 15rem;
+    z-index:1;
+    margin-top: -60rem;
+}
+
+.main-footer{    
+    background-color: #7510f7;
+  height: 90vh;
+  display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem 2rem;
+    font-size: 2rem;
     text-align: center;
 }
 
-.projects{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.project-bg-img{
-    background-image: url('../')
-}
 
 
 @media screen and (min-width: 768px) {
@@ -233,14 +312,19 @@ i{
 
   .skills-container {
     margin-top: -10rem;
-   
   }
 
-  p.container-description{
-      font-size: 1.8rem;
+  p.container-description {
+    font-size: 1.8rem;
   }
 
-  .projects{
+  .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-intro{
+    
+    flex-direction: row;
+  
 }
 }

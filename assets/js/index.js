@@ -3,11 +3,10 @@ let projectContainer = document.querySelector(".projects");
 let  projectDiv  = '';
 
 
-
 projects.forEach((project, i) => {
-
+let url = project.imageUrl;
     projectDiv += `
-    <div class="project-bg-img" style=background-image: url('${project.imageUrl}')">
+    <div class="project-bg-img" id=project_${i}>
     <div class="project-overlay">
     <h1 class="project-title">${project.name}</h1>
     <p class="project-summary">
