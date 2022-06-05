@@ -360,7 +360,8 @@ i {
   opacity: 0.8;
   border-radius: 2rem;
   font-size: 1.2rem;
-  visibility: hidden;
+  opacity: 0.8;
+  visibility: visible;
 }
 
 .project-bg-img > div:hover ~ .project-overlay {
@@ -369,6 +370,9 @@ i {
 
 .make-visible {
   visibility: visible;
+}
+.project-bg-img a{
+    color: #fff;
 }
 
 .project-bg-img a,
