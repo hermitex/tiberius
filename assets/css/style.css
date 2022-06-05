@@ -153,10 +153,11 @@ img {
   width: 100vw;
   padding: 3rem 1rem;
   font-size: 1.1rem;
-  height: 90vh;
+  height: 80vh;
   text-align: center;
   color: #fff;
 }
+
 
 .about-container.bg-primary > div {
   max-width: 1000px;
@@ -349,7 +350,7 @@ i {
   }
 
   p.container-description {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .projects {
