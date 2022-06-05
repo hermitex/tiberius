@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
 
 /* Base styles */
@@ -82,6 +83,7 @@ img {
 /* Nav Bar */
 .navbar.top-nav.flex {
   height: 15vh;
+  padding: 0 3rem;
   justify-content: space-between;
   max-width: 1400px;
   margin: 0 auto;
@@ -91,11 +93,16 @@ img {
   padding: 0.5rem 2rem;
   border-radius: 3rem;
   transition: all 0.5s ease-in;
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #141c3a;
 }
 
 .contact:hover {
   background-color: #7510f7;
   cursor: pointer;
+  color: #fff;
 }
 
 .left.flex {
@@ -141,7 +148,6 @@ img {
   width: 25vw;
 }
 
-
 .avatar-container {
   width: 15rem;
   height: 15rem;
@@ -161,7 +167,7 @@ img {
 }
 
 .avatar-container img:hover {
-  opacity: 0.3;
+  /* opacity: 0.3; */
 }
 
 .avatar-container p {
@@ -197,6 +203,7 @@ img {
   margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 1rem;
   padding: 5rem 1rem;
   background-color: #fff;
@@ -217,12 +224,20 @@ img {
   padding: 5rem 1rem;
   border-radius: 2rem;
   cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  min-height: 60vh;
 }
 
-.skills-container > div:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+.skills-icon{
+    width: 40%;
 }
+
+.skills-container > div img{
+    width: 100%;
+  
+  }
+
 
 .skills-content {
   display: flex;
@@ -237,7 +252,7 @@ i {
   font-size: 5rem;
   color: #7510f7;
 }
-.icon {
+.icon i {
   width: 10rem;
 }
 
@@ -263,6 +278,10 @@ i {
   border-radius: 2rem;
   display: flex;
   flex-direction: row;
+}
+
+.projects > div:hover {
+  cursor: pointer;
 }
 
 .project-bg-img#project_0 {
@@ -298,6 +317,10 @@ i {
   border-radius: 2rem;
   font-size: 1.2rem;
   visibility: hidden;
+}
+
+.project-bg-img > div:hover ~ .project-overlay {
+  visibility: visible;
 }
 
 .make-visible {
@@ -338,13 +361,28 @@ i {
   background-color: #141c3a;
   border-radius: 2rem;
   padding: 1rem 2rem;
-  height: 20rem;
+ 
   margin-top: -21rem;
 }
 
-.intrested > p {
-  max-width: 50rem;
+
+
+.intrested {
+  flex-grow: 2rem;
+  padding: 0;
+  text-align: left;
+}
+
+
+.start-project {
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.footer-intro > a {
+  width: 15vw;
   margin: 0 auto;
+  color: #fff;
 }
 
 .main-footer {
@@ -365,10 +403,14 @@ i {
   font-size: 1.7rem;
 }
 
+.social-media-wrapper i:hover {
+  color: #141c3a;
+}
+
 .social-media-wrapper ul {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -390,5 +432,9 @@ i {
 
   .footer-intro {
     flex-direction: row;
+  }
+
+  .footer-intro {
+   min-height: 30vh;
   }
 }
