@@ -359,7 +359,7 @@ i {
   color: #fff;
   opacity: 0.8;
   border-radius: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem !important;
   opacity: 0.8;
   visibility: visible;
 }
@@ -472,7 +472,7 @@ i {
   }
 
   p.container-description {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .projects {
