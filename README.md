@@ -15,7 +15,7 @@
 ![image](./assets/images/skills.png)
 
 ## Projects Section
-![image](./assets/images/project.png)
+![image](./assets/images/projects.png)
 
 ## Footer Section
 ![image](./assets/images/footer.png)
