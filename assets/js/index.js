@@ -5,8 +5,8 @@ import projects from "./projects.js";
 let projectContainer = document.querySelector(".projects");
 let projectDiv = "";
 
-// Grab the the project background image
-let projectBackgroundImage = document.querySelector(".project-bg-img");
+// Grab the first h1
+let developerTitle = document.querySelector(".title.main-title").textContent;
 
 // Grab the project overlay container
 let projectOverlay = document.querySelector(".project-overlay");
@@ -24,14 +24,22 @@ projects.forEach((project, i) => {
   </div>
   </div>
   `;
-});
+})
 
-// Insert the project to the DOM
 projectContainer.innerHTML = projectDiv;
 
-// Attach the projectBackgroundImage with an hover event
-console.log(projectBackgroundImage);
-projectBackgroundImage.addEventListener("click", () => {
-  alert("u");
-  projectOverlay.classList.add("make-visible");
-});
+const animateLetters = (sentence) => {
+  let letters = sentence.split('');
+
+  letters.forEach(letter =>{
+    if(letter !== ' '){
+      let span = document.createElement('span');
+      span.textContent = letter;      
+    }
+  })
+} 
+
+
+animateLetters(developerTitle);
+
+
