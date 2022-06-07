@@ -87,7 +87,7 @@ label input:checked + .menu + ul {
 
 label ul {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   left: 80%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
