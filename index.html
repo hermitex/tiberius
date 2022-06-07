@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/b9ae0ee7d3.js"
@@ -22,38 +23,31 @@
     <title>Tiberius</title>
   </head>
   <body>
+    <div id="menu-menu">
+      <label>
+        <input type="checkbox" />
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </label>
+    </div>
+
     <!-- Parent Wrapper -->
     <div class="container">
       <!-- Hero Section -->
       <div class="hero-container">
-        <div class="hero-inner flex">
+        <div class="hero-inner flex" id="home">
           <div class="hero-hero">
             <!-- Navigation -->
             <nav class="navbar top-nav flex">
               <div class="logo">
                 <!-- <img src="./assets/images/logo.png" alt="logo" /> -->
                 <h1>TIBERIUS</h1>
-              </div>
-              <div class="left flex">
-                <!-- <div class="humburger-menu">
-                  <input type="checkbox" class="toggler" />
-                  <div class="hamburger">
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div> -->
-                <div class="menu flex">
-                  <a href="#contact no-bg">
-                    <div class="contact bg-white border-secondary">
-                      Mentorship
-                    </div></a
-                  >
-                  <a href="#contact">
-                    <div class="contact bg-white border-secondary">
-                      Say Hi
-                    </div></a
-                  >
-                </div>
               </div>
             </nav>
             <div class="hero-hero-text">
@@ -69,14 +63,18 @@
                 </div>
               </div>
 
-              <div class="avatar-container ">
-                <img src="./assets/images/tiberius.png" alt="avatar" class="bg-primary" />
+              <div class="avatar-container">
+                <img
+                  src="./assets/images/tiberius.png"
+                  alt="avatar"
+                  class="bg-primary"
+                />
                 <!-- <p>I love what I do</p> -->
               </div>
             </div>
           </div>
 
-          <div class="coding-img-container">
+          <div class="coding-img-container" id="about">
             <img src="./assets/images/coding.png" alt="coding" />
           </div>
         </div>
@@ -101,7 +99,7 @@
       </div>
 
       <!-- Skills Container -->
-      <div class="skills-container flex">
+      <div class="skills-container flex" id="skills">
         <div class="frontend-container">
           <div class="skills-icon">
             <img
@@ -219,7 +217,7 @@
       </div>
 
       <!-- Projects -->
-      <div class="recent-projects flex">
+      <div class="recent-projects flex" id="projects">
         <div class="recent-projects-description">
           <h1>My Recent Projects</h1>
           <p class="container-description">
