@@ -96,7 +96,7 @@ img {
   position: absolute;
   top: 0;
   left: 8rem;
-  z-index:2;
+  z-index: 2;
   opacity: 0;
 }
 
@@ -115,17 +115,17 @@ img {
 }
 
 .humburger > div {
-    position: relative;
-    width: 100%;
-    height: 10rem;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
-    z-index: 5;
-    right: 4rem;
-    top: 50rem;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  z-index: 5;
+  right: 4rem;
+  top: 50rem;
 }
 
 .contact {
@@ -176,7 +176,7 @@ img {
   width: 100%;
   height: 70%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 0 3rem;
@@ -184,27 +184,27 @@ img {
 }
 
 .hero-hero-text > div:first-child {
-  width: 25vw;
+  width: 90vw;
 }
 
 .avatar-container {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 100%;
   border-radius: 100%;
   position: relative;
   z-index: 0;
-
 }
 
 .avatar-container img {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 100%;
   position: absolute;
   right: 0.01rem;
   z-index: -1;
   cursor: pointer;
   border: 0.2rem dotted #141c3a;
+  
 }
 
 .avatar-container img:hover {
@@ -287,8 +287,8 @@ img {
   text-align: left;
 }
 
-.tools ul i{
-    font-size: 1rem;
+.tools ul i {
+  font-size: 1rem;
 }
 
 /* icons */
@@ -371,8 +371,8 @@ i {
 .make-visible {
   visibility: visible;
 }
-.project-bg-img a{
-    color: #fff;
+.project-bg-img a {
+  color: #fff;
 }
 
 .project-bg-img a,
@@ -460,9 +460,32 @@ i {
   gap: 5rem;
 }
 
-
-
 @media screen and (min-width: 768px) {
+  .hero-hero-text {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3rem;
+    text-align: center;
+  }
+
+  .hero-hero-text > div:first-child {
+    width: 30vw;
+  }
+
+  .avatar-container {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .avatar-container img {
+    width: 15rem;
+    height: 15rem;
+  }
+
   .skills-container {
     flex-direction: row;
   }
