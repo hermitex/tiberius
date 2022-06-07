@@ -12,7 +12,7 @@ label .menu {
   width: 200px;
   height: 200px;
   background: #141c3ab2;
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 100%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.25s 0s ease-in-out;
   box-shadow: 0 0 0 0 #141c3a, 0 0 0 0 #141c3a;
