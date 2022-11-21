@@ -1,5 +1,7 @@
 /* resetting defaults */
-* {
+* *,
+*:before,
+*:after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -12,6 +14,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -322,6 +325,10 @@ i {
   font-size: 0.9rem !important;
   opacity: 0.8;
   visibility: visible;
+}
+
+.project-overlay h1, .project-overlay p{
+margin: 1.5rem 0;
 }
 
 .project-bg-img > div:hover ~ .project-overlay {
